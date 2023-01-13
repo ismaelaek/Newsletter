@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+body{
+    background: url("Assets/Background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;;
+}
+main{
+    width: 28%;
+    height: fit-content;
+    vertical-align: middle;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #000;
+}
+.slogan{
+    width: 100% ;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 10px 0 0 ;
+    background: url("Assets/Pattern.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #2355F2;
+}
+.slogan p{
+    margin: 0 25%;
+    text-align: center;
+    color: #fff;
+    font-size: 20pt;
+}
+.content{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content p:first-child {
+    opacity: 0.7;
+    text-align: center;
+    margin: 10px ;
+    font-size: 13pt;
+}
+form{
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+input[type="email"]{
+    width: 65%;
+    height: 40px;
+    border: solid 1px ;
+    background-color: #F5F7FA;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+input[type="submit"]{
+    width: 30%;
+    height: 40px;
+    background-color: #2355F2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+}
+input[type="submit"]:hover{
+    cursor: pointer;
+    background-color: #fff;
+    color: #2355F2;
+    border: #2355F2 solid 1px ;
+    
+}
+.content p:nth-child(3){
+    opacity: 0.5;
+    width: 100%;
+    text-align: left;
+    margin: 10px 0;
+}
+table{
+    margin: 20px 0;
+}
+td{
+    padding: 0 5px;
+
+}
+table tr:last-child td{
+    opacity: 0.7;
+    vertical-align: top;
+}
+.content p:last-child{
+    text-align: center;
+    opacity: 0.7;
+}
+@media (min-width:481px) and (max-width:768px) {
+    main{
+        width: 60%;
+        height: fit-content;
+    }
+}
+@media (min-width:1px) and (max-width:480px){
+    body{
+        height: auto;
+    }
+    main{
+        width: 100%;
+        border-radius: 0;
+    }
+    .slogan{
+        border-radius: 0;
+    }
+}
